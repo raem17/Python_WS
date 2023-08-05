@@ -1,0 +1,8 @@
+A la hora de importar paquetes o librerías descargadas con PIP, Pylint no sabe dónde está 
+el módulo para importarlo y salta un error. 
+Ejemplo: import pywhatkit
+Pylint no sabe cómo acceder a pywhatkit porque no encuentra su ruta. Esto sucede en entornos virtuales.
+
+Solución:
+
+https://stackoverflow.com/questions/51095449/pylint-false-positive-e0401-import-errors-in-vscode-while-using-venv
