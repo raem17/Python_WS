@@ -1,0 +1,10 @@
+Problema: Inicias VSCode y a la hora de llamar a una función de un paquete descargado mediante PIP, 
+el autocompletado o Intellisense no te sugiere las funciones del paquete.
+
+Solución: Crear un archivo .py, por ejemplo: test.py, cerrar VSCode teniendo solo ese archivo abierto y vacío.
+Volver a abrir VSCode y escribir en ese archivo los import deseados, por ejemplo: "import pywhatkit".
+Al volver al archivo con el que estábamos trabajando, o cualquier otro, el Intellisense volverá o funcionar.
+Se puede cerrar test.py. Es aconsejable no borrar los import de test.py.
+
+Aviso: Esta es una solución parcial ya que habría que hacer todo el proceso nuevamente si el Intellisense dejara
+de funcionar.
