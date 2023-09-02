@@ -11,7 +11,7 @@ def menu():
 2. Generar una contraseña personalizada. Debe estar formada por al menos 5 caracteres.
 3. Salir del programa.
 
-Aviso: Para generar una contraseña segura de forma rápida se recomienda escoger la 1ª opción.""")
+Consejo: Para generar una contraseña segura de forma rápida se recomienda escoger la 1ª opción.""")
     print(f"{'*' * 100}")
 
 
@@ -22,7 +22,7 @@ def generar_pw_25():
     lower_letters = string.ascii_lowercase
     upper_letters = string.ascii_uppercase
     numbers = string.digits
-    symbols = "¡!#$%&*+-.:;<¿?=@>^_|"
+    symbols = "!@#$%^&*.()"
 
     pw_list = random.sample(lower_letters, 5) + random.sample(upper_letters, 5) + \
         random.sample(numbers, 8) + random.sample(symbols, 7)
@@ -41,7 +41,7 @@ def generar_pw_custom(n_ll: int, n_ul: int, n_nums: int, n_sym: int):
     lower_letters = string.ascii_lowercase
     upper_letters = string.ascii_uppercase
     numbers = string.digits
-    symbols = "¡!#$%&*+-.:;<¿?=@>^_|"
+    symbols = "!@#$%^&*.()"
 
     pw_list = random.sample(lower_letters, n_ll) + random.sample(upper_letters, n_ul) + \
         random.sample(numbers, n_nums) + random.sample(symbols, n_sym)
@@ -72,7 +72,7 @@ while opc != 3:
 
         nums = int(input("¿Cuántos números desea tener? Máx: 10.\n=> ").strip())
 
-        sym = int(input("¿Cuántas símbolos desea tener? Máx: 21.\n=> ").strip())
+        sym = int(input("¿Cuántas símbolos desea tener? Máx: 11.\n=> ").strip())
 
         total = ll + ul + nums + sym
 

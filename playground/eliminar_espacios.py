@@ -2,7 +2,7 @@
 
 
 def eliminar_espacios(cadena: str):
-    """ docstring   d"""
+    """ docstring """
     cadena = cadena.strip()
     cadena_limpia = ""
 
@@ -16,7 +16,7 @@ def eliminar_espacios(cadena: str):
     return cadena_limpia
 
 
-sucio = "       hola         mundo       2023            "
-limpio = eliminar_espacios(sucio)
+sucia = "       hola         mundo       2023            "
+limpia = eliminar_espacios(sucia)
 
-print(limpio, ".")
+print(f"[{limpia}]")
